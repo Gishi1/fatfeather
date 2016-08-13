@@ -1,0 +1,19 @@
+html {
+    background: url(https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg', sizingMethod='scale')";
+}
+header, .full-width {
+    width: 100%;
+    background: #ccc;
+}
+.wrap {
+    width: 80%;
+    max-width: 24em;
+    margin: 0 auto;
+    padding: 0.25em 0.625em;
+}
