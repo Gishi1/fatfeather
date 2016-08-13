@@ -12,24 +12,25 @@ body {
     text-align: center;
     padding:0;
 }
-header, .full-width {
+header, .wrap {
     width: 100%;
     background: #ccc;
     position:fixed;
     left:0px;
     top:0px;
-    height:30px;
+    min-height:30px;
     width:100%;
+    display:inline-block;
 }
 .wrap {
-    width: 80%;
-    max-width: 24em;
+    width: 100%;
     margin: 0 auto;
-    padding: 0.25em 0.625em;
+    display:inline-block;
+    padding: 15px;
 }
 .gallery {
     width: 80%;
-    margin: 50px auto;
+    margin: 200px auto;
 }
 /* Fixed Footer*/
 footer {
@@ -75,4 +76,11 @@ div.img img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+.logo{
+    float: left;
+    clear: left;
+    width: 250px;
+    margin-left: 15px;
 }
