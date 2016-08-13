@@ -6,14 +6,43 @@ html {
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg', sizingMethod='scale')";
+    padding:0;
+}
+body {
+    text-align: center;
+    padding:0;
 }
 header, .full-width {
     width: 100%;
     background: #ccc;
+    position:fixed;
+    left:0px;
+    top:0px;
+    height:30px;
+    width:100%;
 }
 .wrap {
     width: 80%;
     max-width: 24em;
     margin: 0 auto;
     padding: 0.25em 0.625em;
+}
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Fixed Footer*/
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+}
+
+/* IE 6 */
+* html footer {
+    position:absolute;
+    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
